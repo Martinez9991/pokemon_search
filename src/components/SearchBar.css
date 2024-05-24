@@ -1,0 +1,14 @@
+.grid {
+    display: grid;
+    place-items: center;
+  }
+
+  .button {
+    height: 70px;
+    width: 200px;
+  }
+  
+  .texbox { 
+    height: 50px;
+    width: 600px;
+  }

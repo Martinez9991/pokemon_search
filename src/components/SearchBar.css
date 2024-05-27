@@ -3,12 +3,38 @@
     place-items: center;
   }
 
-  .button {
-    height: 70px;
-    width: 200px;
-  }
+.button {
+  height: 70px;
+  width: 200px;
+}
   
-  .texbox { 
-    height: 50px;
-    width: 600px;
-  }
+.texbox { 
+  height: 50px;
+  width: 600px;
+}
+
+.dropdown {
+  width: 35%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px #ddd;
+  border-radius: 10px;
+  margin-top: 1rem;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.dropdown:empty{
+border: none;
+}
+
+.dropdown-row{
+  cursor: pointer;
+  text-align: start;
+  margin: 2px 0;
+}
+
+.dropdown-row:hover{
+  background-color: #efefef;
+}

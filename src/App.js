@@ -1,6 +1,6 @@
 import './App.css';
 import SearchBar from './components/SearchBar.js';
-import Result from './components/Result.js';
+import SearchResult from './components/SearchResult.js';
 import axios from 'axios';
 import { useState , useEffect } from 'react';
 
@@ -22,14 +22,11 @@ useEffect(()=> {
   Getdata()
 })
 
+
+
   return (
     <div className="App">
-      {response2 && response2.results.map(u => (
-        <div key={u.name}>
-          <p>Name: {u.name}</p>
-      </div>
-  ))}
-    <Result/>
+    <SearchResult/>
     <SearchBar/>
     {console.log(Getdata.data)}
     </div>
